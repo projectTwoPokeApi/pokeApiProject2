@@ -63,36 +63,46 @@
 // Create out namespace object 
 const pokeApp = {};
 
+// declare the url global variable
+let url;
 
 // Make the call to the API
 pokeApp.getPokemon = function() {
 
-    
 
 };
 
+// this is the function that will get the user's input
+pokeApp.getUserInput = () => {
 
-    // this is the function that will get the user's input
-    pokeApp.getUserInput = () => {
-        document.querySelector("#pokemon").addEventListener("change", function() {
-            
-            const userChoice = this.value;
-            // console.log(userChoice);
-            // artApp.getArt(selection);
+document.querySelector("#pokemon").addEventListener("change", function() {
+           
+    const userChoice = this.value;
 
-            // what we nee for our fetch request:
-            // url endpoint (new URL)
-            const url = new URL(`https://pokeapi.co/api/v2/pokemon/${userChoice}`)
-            // console.log(url);
-            // console.log(userChoice);
+    // artApp.getArt(selection);
 
+    // what we need for our fetch request:
+    // url endpoint (new URL) with userChoice being added at the end
+    url = new URL(`https://pokeapi.co/api/v2/pokemon/${userChoice}`);
 
-        })
-    };
+        
+    })
+}
 
 
+const button = document.getElementById('search');
 
 
+button.addEventListener('click', function () {
+    fetch(url)
+    .then(results => {
+    // apply .json() method to our results object
+    return results.json();
+    })
+    .then(jsonResults => {
+    console.log(jsonResults);
+    })
+});
 
 // Call the init
 // pokeApp.init();
@@ -100,3 +110,4 @@ pokeApp.getPokemon = function() {
 pokeApp.getUserInput();
 
 pokeApp.getPokemon();
+
