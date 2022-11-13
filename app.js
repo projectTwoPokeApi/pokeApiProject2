@@ -57,8 +57,9 @@
 // set up API Call
     // Attach id numbers to each Pokemon 
     // use a tepmlate literal to add at the end of the URL (thus calling a specific pokemon)
-// When the user selects something from the drop down, and then presses "Search", it calls the API
+    // When the user selects something from the drop down, and then presses "Search", it calls the API
 // Display results to the page
+    // use dot notation ot reference whatever we want to be displaye do on the page, and then use innerHTML or append or whatever its call it
 
 // Create out namespace object 
 const pokeApp = {};
@@ -66,11 +67,17 @@ const pokeApp = {};
 // declare the url global variable
 let url;
 
+
+
 // Make the call to the API
-pokeApp.getPokemon = function() {
+// pokeApp.getPokemon = function() {
 
 
-};
+// };
+
+const button = document.getElementById('search');
+
+
 
 // this is the function that will get the user's input
 pokeApp.getUserInput = () => {
@@ -83,14 +90,9 @@ document.querySelector("#pokemon").addEventListener("change", function() {
 
     // what we need for our fetch request:
     // url endpoint (new URL) with userChoice being added at the end
-    url = new URL(`https://pokeapi.co/api/v2/pokemon/${userChoice}`);
-
-        
+    url = new URL(`https://pokeapi.co/api/v2/pokemon/${userChoice}`);     
     })
 }
-
-
-const button = document.getElementById('search');
 
 
 button.addEventListener('click', function () {
@@ -100,14 +102,30 @@ button.addEventListener('click', function () {
     return results.json();
     })
     .then(jsonResults => {
-    console.log(jsonResults);
-    })
-});
+        
+    // call a function to display the data we find in the object
+     pokeApp.displayData(jsonResults);
+    //  console.log(jsonResults.name)
+    })  
+}); 
+
+
+
+pokeApp.displayData = (specificPokemon) =>{
+  
+
+    const title = document.createElement(`h2`);
+    title.innerText = specificPokemon.name;
+
+
+    
+
+}
 
 // Call the init
 // pokeApp.init();
 
 pokeApp.getUserInput();
 
-pokeApp.getPokemon();
+// pokeApp.getPokemon();
 
