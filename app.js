@@ -114,8 +114,24 @@ button.addEventListener('click', function () {
 pokeApp.displayData = (specificPokemon) =>{
   
 
-    const title = document.createElement(`h2`);
+    const title = document.querySelector(`h2`);
     title.innerText = specificPokemon.name;
+
+
+
+    const sprite = document.querySelector(`img`);
+    sprite.src = specificPokemon.sprites.front_default;
+
+    const number = document.querySelector(`h3`);
+    number.innerText = specificPokemon.id;
+
+
+
+
+
+    
+
+
 
 
     
