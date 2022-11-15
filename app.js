@@ -120,7 +120,7 @@ pokeApp.displayData = (specificPokemon) =>{
 
 
     const sprite = document.querySelector(`img`);
-    sprite.src = specificPokemon.sprites.front_default;
+    sprite.src = specificPokemon.sprites.other.dream_world.front_default;
 
     const number = document.querySelector(`#index`);
     number.innerText = specificPokemon.id;

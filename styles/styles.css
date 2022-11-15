@@ -245,6 +245,10 @@ header {
   display: flex;
 }
 
+.imgBox {
+  width: 20%;
+}
+
 p {
   margin: 0;
   padding: 0;
