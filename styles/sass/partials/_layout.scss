@@ -1,0 +1,15 @@
+// General Layout Styling
+
+// Main Styling
+main {
+    display: flex;
+    justify-content: space-evenly;
+};
+
+header {
+    text-align: center;
+}
+
+.selectedPoke div {
+    display: flex;
+}

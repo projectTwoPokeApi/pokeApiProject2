@@ -114,7 +114,7 @@ button.addEventListener('click', function () {
 pokeApp.displayData = (specificPokemon) =>{
   
 
-    const title = document.querySelector(`h2`);
+    const title = document.querySelector(`#name`);
     title.innerText = specificPokemon.name;
 
 
@@ -122,8 +122,17 @@ pokeApp.displayData = (specificPokemon) =>{
     const sprite = document.querySelector(`img`);
     sprite.src = specificPokemon.sprites.front_default;
 
-    const number = document.querySelector(`h3`);
+    const number = document.querySelector(`#index`);
     number.innerText = specificPokemon.id;
+
+    const base_experience = document.querySelector(`#basexp`);
+    base_experience.innerText = specificPokemon.base_experience;
+
+    const weight = document.querySelector(`#weight`);
+    weight.innerText = specificPokemon.weight;
+
+    const height = document.querySelector(`#height`);
+    height.innerText = specificPokemon.height;
 
 
 

@@ -16,14 +16,14 @@
             <select name="pokemon" id="pokemon">
 
                 <option value="">Select</option>
-                <option value="12">Bulbasaur</option>
-                <option value="33">Squirtle</option>
-                <option value="22">Pikachu</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="1">Bulbasaur</option>
+                <option value="7">Squirtle</option>
+                <option value="4">Charmander</option>
+                <option value="25">Pikachu</option>
+                <option value="39">JigglyPuff</option>
+                <option value="132">Ditto</option>
+                <option value="143">Snorlax</option>
+                <option value="43">Oddish</option>
             </select>
 
         </form>
@@ -32,21 +32,21 @@
 
     </header>
     <main>
-        <ul class="wrapper" id="mainDisplay">
-            <h2></h2>
-            
-            <img src="">
+        <aside>
+            <p>Choose your Pokemon!</p>
+            <p>Then press "Search" to display their stats</p>
+        </aside>
 
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
+            <section class="selectedPoke wrapper" id="mainDisplay">
+                <div><h2 id="name"></h2></div>
+                
+                <img src="">
 
-        
-
-            
-
-        </ul>
-
+                <div>Index:<p id="index"></p></div>
+                <div>BaseXP:<p id="basexp"></p></div>
+                <div>Weight:<p id="weight"></p></div>
+                <div>Height:<p id="height"></p></div>
+            </section>
     </main>
     <footer>
 
