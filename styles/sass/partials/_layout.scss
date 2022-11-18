@@ -2,8 +2,9 @@
 
 // Main Styling
 main {
+    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 };
 
 header {
@@ -16,4 +17,29 @@ header {
 
 .imgBox {
     width: 20%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    padding-top:2vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.wrapper{
+    max-width:1260px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+section{
+    padding-left: 15%;
 }
