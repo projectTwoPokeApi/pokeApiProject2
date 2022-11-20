@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeViewer!</title>
-    <link rel="stylesheet" href="./styles/styles.css" >
-</head>
-<body class="wrapper">
-    <header>
-        <h1>PokeViewer!</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PokeViewer!</title>
+        <link rel="stylesheet" href="./styles/styles.css" >
+    </head>
 
-        <form action="">
-            <label for="pokemon">Choose your Pokemon</label>
-            <select name="pokemon" id="pokemon">
+    <!-- TODO: Media Queries, Add accessibility, Clean up code, Add comments, Add error handling for "Search" button being pressed with empty "Select" field (returns "undefined"), Styling -->
 
-                <option value="">Select</option>
-                <option value="1">Bulbasaur</option>
-                <option value="7">Squirtle</option>
-                <option value="4">Charmander</option>
-                <option value="25">Pikachu</option>
-                <option value="39">JigglyPuff</option>
-                <option value="132">Ditto</option>
-                <option value="143">Snorlax</option>
-                <option value="43">Oddish</option>
-            </select>
+    <body>
 
-        </form>
-        <button id="search">Search</button>
+        <!-- Header -->
+        <header class="wrapper">
+            <h1>PokeViewer!</h1>
+            <!-- Drop down menu (form) with Pokemon to select -->
+            <form action="">
+                <label for="pokemon">Choose your Pokemon!</label>
+                <select name="pokemon" id="pokemon">
+                    <!-- Options within the drop down menu -->
+                    <option value="">Select</option>
+                    <option value="1">Bulbasaur</option>
+                    <option value="7">Squirtle</option>
+                    <option value="4">Charmander</option>
+                    <option value="25">Pikachu</option>
+                    <option value="39">JigglyPuff</option>
+                    <option value="132">Ditto</option>
+                    <option value="143">Snorlax</option>
+                    <option value="43">Oddish</option>
+                </select>
+            </form>
+            <!-- Search button -->
+            <button id="search">Search</button>
+        </header>
 
-
-    </header>
-    <main>
-        <aside>
-            <p>Choose your Pokemon!</p>
-            <p>Select your pokemon of choice from the dropdown menu and hit submit to display their core stats!</p>
-        </aside>
-
-            <section class="selectedPoke wrapper" id="mainDisplay">
-                <div><h2 id="name"></h2></div>
-                
-                <div class="imgBox">
-                    <img src="">
-                </div>
-
+        <!-- Main -->
+        <main class="wrapper">
+            <!-- Instructions for how to use the app -->
+            <aside>
+                <p>Select your pokemon of choice from the dropdown menu and hit submit to display their core stats!</p>
+            </aside>
+                <!-- Selected Pokemon Information Section -->
+            <section class="selectedPoke" id="mainDisplay">
+                <!-- Name from the API -->
+                <div><h2 id="name"></h2></div>           
+                <!-- Image from the API, starts empty -->
+                <div class="imgBox"><img src=""></div>
+                <!-- Stats from the API -->
                 <div>Index:<p id="index"></p></div>
                 <div>BaseXP:<p id="basexp"></p></div>
                 <div>Weight:<p id="weight"></p></div>
                 <div>Height:<p id="height"></p></div>
             </section>
-    </main>
-    <footer>
-        <p> Created by: Gia .B and Lucas .P</p>
-        <p>Submitted to JUNO COLLEGE 2022</p>
-        <p>API used: Poke API (https://pokeapi.co/docs/v2)</p>
-        
+        </main>
 
-    </footer>
-    <script src="app.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="wrapper">
+            <p> Created by: Gia .B and Lucas .P</p>
+            <p>Submitted to JUNO COLLEGE 2022</p>
+            <p>API used: Poke API (https://pokeapi.co/docs/v2)</p>
+        </footer>
+
+        <!-- JS link -->
+        <script src="app.js"></script>
+    </body>
 </html>
 
   

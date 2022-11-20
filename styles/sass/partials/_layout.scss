@@ -1,45 +1,47 @@
-// General Layout Styling
+// Layout Styling
 
-// Main Styling
-main {
-    
+
+// General Styles
+body {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-};
+}
 
+.wrapper {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// Header Styling
 header {
     text-align: center;
 }
 
-.selectedPoke div {
-    display: flex;
+// Main Styling
+main {
+    
+};
+
+.selectedPoke {
+    padding-left: 15%;
+
+    div {
+        display: flex;
+    }
 }
 
 .imgBox {
     width: 20%;
 }
 
-body {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+// Footer Styling
 footer{
     padding-top:2vh;
     display:flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.wrapper{
-    max-width:400px;
-    width: 90%;
-    margin: 0 auto;
 
-}
-
-section{
-    padding-left: 15%;
-}
