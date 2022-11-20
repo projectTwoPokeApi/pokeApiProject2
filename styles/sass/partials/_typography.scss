@@ -1,12 +1,37 @@
+// General Font Styling
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #0f380f;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #081820;
+}
+
 p {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
 h2 {
     text-transform: capitalize;
+}
+
+// Header 
+
+select {
+    font: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0f380f;;
+}
+
+button {
+    font: inherit;
 }
