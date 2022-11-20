@@ -3,9 +3,7 @@
 
 // General Styles
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
 .wrapper {
@@ -17,23 +15,30 @@ body {
 // Header Styling
 header {
     text-align: center;
+
+    form {
+        padding-bottom: 3%;
+    }
 }
 
 // Main Styling
 main {
-    
+    padding-top: 5%;
 };
 
 .selectedPoke {
-    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     div {
+        padding-top: 1%;
         display: flex;
     }
 }
 
 .imgBox {
-    width: 20%;
+    width: 60%;
 }
 
 // Footer Styling

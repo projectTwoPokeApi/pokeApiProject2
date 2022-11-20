@@ -226,19 +226,6 @@ html {
   overflow: hidden;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .wrapper {
   max-width: 400px;
   width: 90%;
@@ -248,18 +235,35 @@ body {
 header {
   text-align: center;
 }
+header form {
+  padding-bottom: 3%;
+}
+
+main {
+  padding-top: 5%;
+}
 
 .selectedPoke {
-  padding-left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .selectedPoke div {
+  padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .imgBox {
-  width: 20%;
+  width: 60%;
 }
 
 footer {
