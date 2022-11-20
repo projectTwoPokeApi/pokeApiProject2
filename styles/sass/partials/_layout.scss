@@ -22,8 +22,7 @@ header {
 
         select {
             margin-top: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 20px 20px 20px 20px;
             border-width: 2px;
             border-color: #0f380f;
             background-color: #e0f8d0;
@@ -33,8 +32,7 @@ header {
 
     button {
         padding: 10px 20px 10px 20px;
-        font-size: .6em;
-        border-width: 4px;
+        border-width: 7px;
         border-radius: 5px;
         border-color: #e0f8d0;
         background-color: #e0f8d0;
@@ -72,7 +70,6 @@ main {
 
     }
 
-
     .statText {
         padding-top: 20px;
     
@@ -83,12 +80,10 @@ main {
     }
 }
 
-
-
-
 // Footer Styling
 footer {
     padding-top: 50px;
+    padding-bottom: 30px;
     display:flex;
     flex-direction: column;
     align-items: center;

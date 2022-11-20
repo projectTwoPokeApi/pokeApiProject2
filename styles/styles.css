@@ -245,8 +245,7 @@ header form {
 }
 header form select {
   margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
   border-width: 2px;
   border-color: #0f380f;
   background-color: #e0f8d0;
@@ -254,8 +253,7 @@ header form select {
 }
 header button {
   padding: 10px 20px 10px 20px;
-  font-size: 0.6em;
-  border-width: 4px;
+  border-width: 7px;
   border-radius: 5px;
   border-color: #e0f8d0;
   background-color: #e0f8d0;
@@ -306,6 +304,7 @@ main {
 
 footer {
   padding-top: 50px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +320,7 @@ footer {
 body {
   font-family: "Press Start 2P", cursive;
   color: #0f380f;
+  text-align: center;
 }
 
 h1 {
@@ -337,10 +337,6 @@ p {
   vertical-align: baseline;
 }
 
-h2 {
-  text-transform: capitalize;
-}
-
 select {
   font: inherit;
   text-align: center;
@@ -350,4 +346,19 @@ select {
 
 button {
   font: inherit;
+  color: #0f380f;
+}
+
+aside p {
+  text-align: center;
+  font-size: 14px;
+}
+
+h2 {
+  text-transform: capitalize;
+  color: #081820;
+}
+
+footer {
+  font-size: 10px;
 }
