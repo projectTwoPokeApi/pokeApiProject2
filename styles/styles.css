@@ -255,15 +255,24 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.selectedPoke div {
+.selectedPoke h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: auto;
+  display: block;
+}
+.selectedPoke .statText {
   padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.imgBox {
+img {
   width: 60%;
+  padding-bottom: 3%;
+  margin: auto;
+  display: block;
 }
 
 footer {

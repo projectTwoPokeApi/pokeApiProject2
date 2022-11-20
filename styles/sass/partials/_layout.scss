@@ -31,15 +31,26 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    div {
+    h2 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: auto;
+        display: block;
+    }
+
+    .statText {
         padding-top: 1%;
         display: flex;
     }
 }
 
-.imgBox {
+img {
     width: 60%;
+    padding-bottom: 3%;
+    margin: auto;
+    display: block;
 }
+
 
 // Footer Styling
 footer{
