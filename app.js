@@ -1,5 +1,5 @@
 
-// MVP
+// MVP Pseudocode
 
 // Start with HTML skeleton
 // start with namespace
@@ -63,10 +63,5 @@ pokeApp.displayData = (specificPokemon) =>{
 
 }
 
-// Call the init
-// pokeApp.init();
-
+// Function that starts all scripting on button push.
 pokeApp.getUserInput();
-
-// pokeApp.getPokemon();
-
