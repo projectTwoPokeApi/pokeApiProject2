@@ -240,7 +240,7 @@ header form {
 }
 
 main {
-  padding-top: 5%;
+  padding-top: 20px;
 }
 
 .selectedPoke {
@@ -256,27 +256,34 @@ main {
           justify-content: center;
 }
 .selectedPoke h2 {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin: auto;
+  display: block;
+}
+.selectedPoke .imgBox {
+  height: 300px;
+}
+.selectedPoke .imgBox img {
+  padding-top: 25px;
+  min-width: 60%;
+  max-width: 80%;
+  max-height: 500px;
   margin: auto;
   display: block;
 }
 .selectedPoke .statText {
-  padding-top: 1%;
+  padding-top: 20px;
+}
+.selectedPoke .statText .stat {
+  padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-img {
-  width: 60%;
-  padding-bottom: 3%;
-  margin: auto;
-  display: block;
-}
-
 footer {
-  padding-top: 10%;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
